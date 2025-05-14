@@ -1,0 +1,111 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif; /* 🔥 Fonte moderna */
+    text-align: center;
+    background-color: #000; /* 🔥 Preto profundo para imersão */
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    background-image: url('https://source.unsplash.com/1600x900/?cinema,movies');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffcc00; /* 🔥 Dourado estilo Oscar */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* 🔥 Sombra mais destacada */
+    margin-bottom: 20px;
+}
+
+.search-container {
+    margin-bottom: 60px; /* 🔥 Mais espaço entre pesquisa e lista de filmes */
+}
+
+#search {
+    padding: 12px;
+    width: 40%;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid #f39c12;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px;
+    cursor: pointer;
+    background-color: #f39c12;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #e67e22;
+}
+
+#movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* 🔥 Mais espaçamento entre os filmes */
+}
+
+.movie {
+    width: 260px;
+    background: rgba(34, 34, 34, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.movie:hover {
+    transform: scale(1.05); /* 🔥 Zoom reduzido para evitar sobreposição */
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.synopsis {
+    font-size: 14px;
+    color: #ddd;
+    font-style: italic;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    max-width: 280px;
+    text-align: justify;
+}
+
+/* 🔥 Estilização das estrelas */
+.stars {
+    font-size: 20px;
+    color: #ffcc00;
+    margin-bottom: 8px;
+}
+
+/* 🔹 Botão de detalhes */
+.details-btn {
+    padding: 10px 18px;
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.details-btn:hover {
+    background-color: #c0392b;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}

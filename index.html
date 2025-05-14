@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra os melhores filmes com nosso catálogo interativo!">
+    <meta name="keywords" content="filmes, cinema, catálogo, assistir, streaming">
+    <meta name="author" content="Saulo">
+    <title>Cinema Explorer 🎥</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🎬 Cinema Explorer</h1>
+
+    <div class="search-container">
+        <label for="search">Pesquise um filme:</label>
+        <input type="text" id="search" placeholder="Digite o nome do filme..." aria-label="Campo de pesquisa de filmes">
+        <button type="button" onclick="searchMovies()">Buscar</button>
+    </div>
+
+    <div id="movie-list" class="movies-container"></div>
+
+    <footer>
+        <p>&copy; 2025 Cinema Explorer. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
