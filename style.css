@@ -1,7 +1,7 @@
 body {
-    font-family: 'Poppins', Arial, sans-serif; /* 🔥 Fonte moderna */
+    font-family: 'Poppins', Arial, sans-serif;
     text-align: center;
-    background-color: #000; /* 🔥 Preto profundo para imersão */
+    background-color: #000;
     color: #fff;
     margin: 0;
     padding: 20px;
@@ -14,13 +14,16 @@ body {
 h1 {
     font-size: 36px;
     font-weight: bold;
-    color: #ffcc00; /* 🔥 Dourado estilo Oscar */
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* 🔥 Sombra mais destacada */
+    color: #ffcc00;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
     margin-bottom: 20px;
 }
 
 .search-container {
-    margin-bottom: 60px; /* 🔥 Mais espaço entre pesquisa e lista de filmes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
 }
 
 #search {
@@ -32,6 +35,7 @@ h1 {
     font-size: 16px;
 }
 
+/* Botão de busca */
 button {
     padding: 12px;
     cursor: pointer;
@@ -47,11 +51,12 @@ button:hover {
     background-color: #e67e22;
 }
 
+/* Lista de filmes */
 #movie-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* 🔥 Mais espaçamento entre os filmes */
+    gap: 20px;
 }
 
 .movie {
@@ -64,7 +69,7 @@ button:hover {
 }
 
 .movie:hover {
-    transform: scale(1.05); /* 🔥 Zoom reduzido para evitar sobreposição */
+    transform: scale(1.05);
     box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
 }
 
@@ -85,14 +90,14 @@ img {
     text-align: justify;
 }
 
-/* 🔥 Estilização das estrelas */
+/* Estilização das estrelas */
 .stars {
     font-size: 20px;
     color: #ffcc00;
     margin-bottom: 8px;
 }
 
-/* 🔹 Botão de detalhes */
+/* Botão de detalhes */
 .details-btn {
     padding: 10px 18px;
     background-color: #e74c3c;
@@ -108,4 +113,21 @@ img {
 .details-btn:hover {
     background-color: #c0392b;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* 🔥 Ajuste para telas menores (aplicado apenas no celular) */
+@media (max-width: 600px) {
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #search {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 90%;
+    }
 }
